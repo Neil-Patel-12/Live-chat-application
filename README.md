@@ -46,3 +46,12 @@ This Live Chat Application uses Flask for handling HTTP requests, uses SocketIO 
 2. Upon submitting the form, the server processes the information and redirects the user to the corresponding chat room. <br>
 3. The chat room page uses SocketIO to establish a real-time connection with the server, enabling instant message updates. <br>
 4. Users can send and receive messages in real-time, and the server stores the chat history in memory. <br>
+
+## Sources I used
+https://www.pythonanywhere.com/user/NeilPatel12/webapps/#tab_id_neilpatel12_pythonanywhere_com <br>
+https://www.youtube.com/watch?v=Qr4QMBUPxWo <br>
+https://flask-socketio.readthedocs.io/en/latest/ <br>
+https://flask-socketio.readthedocs.io/en/latest/getting_started.html <br>
+https://pypi.org/project/Flask-SocketIO/ <br>
+https://flask-socketio.readthedocs.io/en/latest/intro.html <br>
+

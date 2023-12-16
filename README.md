@@ -48,6 +48,7 @@ This Live Chat Application uses Flask for handling HTTP requests, uses SocketIO 
 4. Users can send and receive messages in real-time, and the server stores the chat history in memory. <br>
 
 ## Sources I used
+https://www.youtube.com/watch?v=zQDzNNt6xd4 <br>
 https://www.pythonanywhere.com/user/NeilPatel12/webapps/#tab_id_neilpatel12_pythonanywhere_com <br>
 https://www.youtube.com/watch?v=Qr4QMBUPxWo <br>
 https://flask-socketio.readthedocs.io/en/latest/ <br>

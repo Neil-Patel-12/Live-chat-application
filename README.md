@@ -9,9 +9,9 @@ This Live Chat Application uses Flask for handling HTTP requests, uses SocketIO 
 2. Room Management: I stored information in a HashMap called (rooms = {}), it stored information about the chat rooms, such as number of members and messages. Also, create a (def generate_unique_code(Length):) function to create a new code for each new room.
 3. Setting-up Routes: used decorators such as “@app.route("/", methods=["POST", "GET"])” and “@app.route("/room")” to handle events. The (def home():) function handles both GET and POST requests. Renders the home.html template on GET. On POST, processes user input, validates it, and redirects to the appropriate room. The (def room():) function Renders the room.html template, checking if the user is properly authenticated.
 4. SocketIO Event Handlers & Notifications: (using Flask/python Decorators)
-   - Def message(data): Handles incoming messages from clients. Broadcasts the message to all clients in the same room and stores it in the server's memory.
-   - Def connect(auth): Handles client connections, joins the client to the specified room, and broadcasts a notification about the new user.
-   - Def disconnect(): Handles client disconnections, updates the number of members in the room, and broadcasts a notification about the user leaving.
+   - def message(data): Handles incoming messages from clients. Broadcasts the message to all clients in the same room and stores it in the server's memory.
+   - def connect(auth): Handles client connections, joins the client to the specified room, and broadcasts a notification about the new user.
+   - def disconnect(): Handles client disconnections, updates the number of members in the room, and broadcasts a notification about the user leaving.
 
 ## main.py
 - Flask Setup: Initializes a Flask app and sets a secret key for session management. <br>

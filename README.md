@@ -7,29 +7,29 @@ HTML/CSS for the front end. The server manages chat rooms, user information, nd 
 done through SocketIO events. This allows for a interactive chat experience! <br>
 
 ## main.py
-- Flask Setup: Initializes a Flask app and sets a secret key for session management.
-- SocketIO Setup: Initializes a SocketIO instance associated with the Flask app.
-- Room Management: Defines a dictionary (rooms) to store information about chat rooms, including the number of members and messages.
-- Unique Code Generation: Implements a function (generate_unique_code) to generate a unique code for new chat rooms.
-**Routes:**
-- /: Handles both GET and POST requests. On GET, it renders the home.html template. On POST, it processes user input (name, room code) and redirects to the appropriate room with a given code.
-- /room: Renders the room.html template, checking if the user is properly authenticated.
-**SocketIO Event Handlers:**
-- message: Handles incoming messages from clients, broadcasting the message to all clients in the same room and storing it in the server's memory.
-- connect: Handles client connections, joins the client to the specified room, and broadcasts a notification about the new user.
-- disconnect: Handles client disconnections, updates the number of members in the room, and broadcasts a notification about the user leaving.
-**Server Run:**
-- Runs the Flack app using SocketIO
+- Flask Setup: Initializes a Flask app and sets a secret key for session management. <br>
+- SocketIO Setup: Initializes a SocketIO instance associated with the Flask app. <br>
+- Room Management: Defines a dictionary (rooms) to store information about chat rooms, including the number of members and messages. <br>
+- Unique Code Generation: Implements a function (generate_unique_code) to generate a unique code for new chat rooms. <br>
+**Routes:** <br>
+- /: Handles both GET and POST requests. On GET, it renders the home.html template. On POST, it processes user input (name, room code) and redirects to the appropriate room with a given code. <br>
+- /room: Renders the room.html template, checking if the user is properly authenticated. <br>
+**SocketIO Event Handlers:** <br>
+- message: Handles incoming messages from clients, broadcasting the message to all clients in the same room and storing it in the server's memory. <br>
+- connect: Handles client connections, joins the client to the specified room, and broadcasts a notification about the new user. <br>
+- disconnect: Handles client disconnections, updates the number of members in the room, and broadcasts a notification about the user leaving. <br>
+**Server Run:**  <br>
+- Runs the Flack app using SocketIO  <br>
 
 ## base.html
 - Provides the basic structure for HTML templates, including a title, stylesheet link, and a content block.
 
 ## home.html
-- Uses the base.html by using the {% extends 'base.html' %} statement
-- Displays the chat room interface, including the room code, a message box for displaying messages, and an input field for sending messages.
-- Utilizes SocketIO to handle real-time communication for message updates.
-- Uses JavaScript to dynamically update the message box when new messages are received.
-- Uses a for-loop to display existing messages when the page is loaded.
+- Uses the base.html by using the {% extends 'base.html' %} statement <br>
+- Displays the chat room interface, including the room code, a message box for displaying messages, and an input field for sending messages. <br>
+- Utilizes SocketIO to handle real-time communication for message updates. <br>
+- Uses JavaScript to dynamically update the message box when new messages are received. <br>
+- Uses a for-loop to display existing messages when the page is loaded. <br>
 
 ## style.css
 - Defines styles for different elements in the application, providing a visually appealing and user-friendly interface.

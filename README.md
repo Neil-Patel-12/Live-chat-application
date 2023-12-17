@@ -3,6 +3,7 @@
 You can view the app here: http://neilpatel12.pythonanywhere.com/  <br>
 ## How it works
 This Live Chat Application uses Flask for handling HTTP requests, uses SocketIO for real-time communication (no need for data base), and a HTML/CSS for the front end. The server manages chat rooms, user information, nd message history in memory. The real-time communication is done through SocketIO events. This allows for a interactive chat experience!
+![Chat_application](https://github.com/Neil-Patel-12/Live-chat-application/assets/108227267/1cf393dd-8a38-4bdc-b476-c75b23871d45) <br>
 
 ## Deep Dive into how the Server works using Flask (the micro web framework)
 1. Flask Setup: First I initialized the Flask Setup using (‘app’). Then initialize SocketIO instance (‘socketio’) associated with the Flask app. Also, setup a secret key for each session management in Flask.

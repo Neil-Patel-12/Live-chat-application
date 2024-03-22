@@ -48,6 +48,12 @@ This Live Chat Application uses Flask for handling HTTP requests, uses SocketIO 
 3. The chat room page uses SocketIO to establish a real-time connection with the server, enabling instant message updates. <br>
 4. Users can send and receive messages in real-time, and the server stores the chat history in memory. <br>
 
+
+● Created a Full-Stack Chat Application using Pythons web framework Flask and the SocketIO library which enables real-time event-based communication between the browser and the server. 
+● Used a Python Dictionary to store chat room information, such as num_of_members and messages in chat room. The application generates a random code for each new room, allowing others can join with that code. 
+● Easy to use, connect & communicate among 5+ browsers, and enjoy the chat functionality through SocketIO event handling functionalities. The Event handling also broadcasts a Notification to everyone in the chat room that a new person has joined or if someone has left.
+● The backend efficiently handles WebSocket events, managing user connections, room interactions, and real-time message distribution within 20 seconds.
+
 ## Sources I used
 https://www.youtube.com/watch?v=zQDzNNt6xd4 <br>
 https://www.pythonanywhere.com/user/NeilPatel12/webapps/#tab_id_neilpatel12_pythonanywhere_com <br>
